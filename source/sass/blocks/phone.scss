@@ -1,0 +1,31 @@
+.phone__link {
+  font-family: $ff-alumni;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 26px;
+  line-height: 31px;
+  background: $color-text-light;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  transition: background 0.3s ease 0s;
+
+
+  @include vp-tablet {
+    font-size: 24px;
+    line-height: 29px;
+    letter-spacing: 0.02em;
+  }
+
+  @include vp-mobile {
+    font-size: 20px;
+    line-height: 24px;
+  }
+}
+
+.phone__link:hover,
+.phone__link:focus,
+.phone__link:active {
+  background: $color-gradient;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}

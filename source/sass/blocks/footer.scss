@@ -1,0 +1,10 @@
+.footer {
+  background-color: $color-bg-dark;
+}
+
+.footer__container {
+
+  @include vp-mobile {
+    column-count: 2;
+  }
+}
