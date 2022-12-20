@@ -5,11 +5,8 @@
   font-size: 26px;
   line-height: 31px;
   letter-spacing: 0.03em;
-  background: $color-text-light;
-  background-clip: text;
-  -webkit-text-fill-color: transparent;
-  transition: background 0.3s ease 0s;
-
+  color: $color-text-light;
+  transition: color 0.3s ease 0s;
 
   @include vp-tablet {
     font-size: 24px;
@@ -26,7 +23,5 @@
 .phone__link:hover,
 .phone__link:focus,
 .phone__link:active {
-  background: $color-gradient;
-  background-clip: text;
-  -webkit-text-fill-color: transparent;
+  color: $color-accent-dark;
 }

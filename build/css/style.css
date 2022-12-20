@@ -678,7 +678,7 @@ button,
   letter-spacing: 0.05em;
   margin-left: auto;
   text-align: center;
-  color: #FFFFFF;
+  color: #ffffff;
   background-color: inherit;
   border: 4px solid #ffffff;
   cursor: pointer;
@@ -852,30 +852,23 @@ button,
   font-size: 26px;
   line-height: 31px;
   letter-spacing: 0.03em;
-  background: #FFFFFF;
-  -webkit-background-clip: text;
-  background-clip: text;
-  -webkit-text-fill-color: transparent;
-  -webkit-transition: background 0.3s ease 0s;
-  -o-transition: background 0.3s ease 0s;
-  transition: background 0.3s ease 0s;
+  color: #ffffff;
+  -webkit-transition: color 0.3s ease 0s;
+  -o-transition: color 0.3s ease 0s;
+  transition: color 0.3s ease 0s;
 }
 
 .phone__link:hover,
 .phone__link:focus,
 .phone__link:active {
-  background: -o-linear-gradient(352.95deg, #ed0233 17.6%, #003eb7 95.31%);
-  background: linear-gradient(97.05deg, #ed0233 17.6%, #003eb7 95.31%);
-  -webkit-background-clip: text;
-  background-clip: text;
-  -webkit-text-fill-color: transparent;
+  color: #1C3374;
 }
 
 .about {
   padding-top: 51px;
   padding-bottom: 51px;
   background: conic-gradient(from 130.31deg at 16.03% 39.06%, #b80027 -46.69deg, #003d85 32.24deg, #b80027 313.31deg, #003d85 392.24deg);
-  color: #FFFFFF;
+  color: #ffffff;
 }
 
 .about h1 {
@@ -892,7 +885,7 @@ button,
   margin-top: 15px;
   text-transform: uppercase;
   -webkit-text-stroke-width: 2px;
-  -webkit-text-stroke-color: #FFFFFF;
+  -webkit-text-stroke-color: #ffffff;
 }
 
 .about p {
@@ -999,7 +992,7 @@ button,
 }
 
 .footer {
-  background-color: #030A1A;
+  background-color: #030a1a;
   padding-top: 40px;
   padding-bottom: 41px;
 }
@@ -1033,7 +1026,23 @@ button,
 }
 
 .navigation__list a {
-  color: #FFFFFF;
+  color: #ffffff;
+  padding: 3px;
+  border-radius: 1px;
+  -webkit-transition: color 0.3s ease 0s;
+  -o-transition: color 0.3s ease 0s;
+  transition: color 0.3s ease 0s;
+}
+
+.navigation__list a:hover,
+.navigation__list a:focus,
+.navigation__list a:active {
+  color: #ed0233;
+}
+
+.navigation__list a:focus-visible {
+  outline: 1px solid #ffffff;
+  outline-offset: 3px;
 }
 
 .social {
@@ -1054,12 +1063,18 @@ button,
   place-content: center;
   width: 25px;
   height: 25px;
-  color: #FFFFFF;
+  color: #ffffff;
   -webkit-transition: opacity 0.3s ease 0s, -webkit-transform 0.3s ease 0s;
   transition: opacity 0.3s ease 0s, -webkit-transform 0.3s ease 0s;
   -o-transition: transform 0.3s ease 0s, opacity 0.3s ease 0s;
   transition: transform 0.3s ease 0s, opacity 0.3s ease 0s;
   transition: transform 0.3s ease 0s, opacity 0.3s ease 0s, -webkit-transform 0.3s ease 0s;
+  border-radius: 50%;
+}
+
+.social__link:focus-visible {
+  outline: 1px solid #ffffff;
+  outline-offset: 3px;
 }
 
 .social__link svg {
