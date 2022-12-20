@@ -2,6 +2,18 @@
   list-style-type: none;
   padding: 0;
   margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+
+  @include vp-tablet {
+    gap: 30px;
+  }
+
+  @include vp-mobile {
+    gap: 30px;
+    display: block;
+  }
 
   a {
     color: $color-text-light;

@@ -1,10 +1,40 @@
 .footer {
   background-color: $color-bg-dark;
+  padding-top: 40px;
+  padding-bottom: 41px;
+
+  @include vp-tablet {
+  padding-top: 45px;
+  padding-bottom: 44px;
+  }
+
+  @include vp-mobile {
+    padding-top: 54px;
+    padding-bottom: 48px;
+  }
 }
 
 .footer__container {
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  gap: 20px;
 
+  @include  vp-mobile {
+    grid-template-columns:auto;
+  }
+}
+
+.footer__navigation {
+  margin: 0 auto;
+}
+
+
+.footer__wrapper-logo-nav {
+  display: contents;
   @include vp-mobile {
+    display: block;
     column-count: 2;
+    gap:70px;
+    column-fill: balance;
   }
 }
