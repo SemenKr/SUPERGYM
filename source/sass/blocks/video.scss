@@ -1,46 +1,63 @@
 .video {
-  aspect-ratio: 364/268;
-  width: 364px;
-  display: grid;
-  place-content: center;
+  position: relative;
+  width: 100%;
+  height: 0;
+  padding-bottom: 52.25%;
+  background-color: #000000;
 
   @include vp-tablet {
-    aspect-ratio: 266/167;
     width: 266px;
   }
 
   @include vp-mobile {
     width: 100%;
-    aspect-ratio: 320/167;
     background-size: cover;
-  }
-
-  iframe,
-  img {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    display: block;
-  }
-
-  iframe {
-    height: 0;
-    border: none;
   }
 }
 
-.video__button {
+.video__link {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+
+  &::before {
+    content: "";
+    position: absolute;
+    display: block;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(20, 54, 122, 0.5);
+    z-index: 1;
+  }
+}
+.video__media {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
   border: none;
-  background-color: inherit;
+}
+
+.video__button {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  padding: 0;
+  border: none;
+  background-color: transparent;
+  transform: translate(-50%, -50%);
+  cursor: pointer;
   width: 100px;
   height: 100px;
   background-image: url("../img/svg/video-play.svg");
   z-index: 2;
-  background-size: cover;
-  transition: transform 0.3s ease 0s;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+  display: none;
 
   @include vp-tablet {
     width: 73px;
@@ -48,12 +65,19 @@
   }
 }
 
-.video__button:hover {
-  transform: scale(1.1);
+.video__button:focus {
+  outline: none;
+}
+
+.video:hover .video__button,
+.video:focus-within .video__button {
+  transform: translate(-50%, -50%) scale(1.1);
+  opacity: 0.9;
 }
 
 .video__button:active {
-  transform: scale(0.99);
+  transform: translate(-50%, -50%) scale(0.99);
+  opacity: 0.8;
 }
 
 .video._active {
@@ -65,4 +89,14 @@
 
 .video._active .video__button {
   display: none;
+}
+
+/* Enabled */
+
+.video--enabled {
+  cursor: pointer;
+}
+
+.video--enabled .video__button {
+  display: block;
 }
