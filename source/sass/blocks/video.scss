@@ -1,0 +1,52 @@
+.video {
+  position: relative;
+  aspect-ratio: 16 / 9;
+  display: grid;
+  place-content: center;
+
+  iframe,
+  img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  iframe {
+    height: 0;
+  }
+}
+
+.video__button {
+  border: none;
+  background-color: inherit;
+  width: 100px;
+  height: 100px;
+  background-image: url("../img/svg/video-play.svg");
+  z-index: 2;
+  background-size: cover;
+  transition: transform 0.3s ease 0s;
+
+  @include vp-tablet {
+    width: 73px;
+    height: 73px;
+  }
+}
+
+.video__button:hover  {
+  transform: scale(1.1);
+}
+
+.video__button:active  {
+  transform: scale(0.99);
+}
+
+
+.video._active {
+  iframe {
+    height: 100%;
+    z-index: 3;
+  }
+}
