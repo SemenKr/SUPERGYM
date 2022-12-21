@@ -2,6 +2,8 @@
   padding: 120px 45px;
   width: 100%;
   margin: 0 auto;
+  color: $color-text-dark;
+
 
   @include vp-tablet {
     padding: 100px 45px;
@@ -22,7 +24,7 @@
   max-width: 1160px;
   margin: 0 auto;
   gap: 3%;
-  position: relative;
+position: relative;
   padding-bottom: 116px;
 
   @include vp-tablet {
@@ -34,5 +36,136 @@
   @include vp-mobile {
     gap: 33px;
     padding-bottom: 0;
+  }
+}
+
+.review__text {
+  max-width: 35.5%;
+  padding: 20px;
+  padding-left: 60px;
+  padding-right: 0;
+
+  @include vp-tablet {
+    width: 100%;
+    max-width: none;
+    padding: 0;
+    text-align: center;
+  }
+
+  @include vp-mobile {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  h2 {
+    margin-top: 18px;
+    margin-bottom: 7px;
+
+    @include vp-tablet {
+      margin-right: 14px;
+      margin-top: 0;
+      margin-bottom: 0;
+    }
+
+    @include vp-mobile {
+      text-align-last: left;
+      margin-bottom: 6px;
+    }
+  }
+}
+
+.review__subtitle {
+  font-family: $ff-roboto;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.5;
+  margin: 0;
+  margin-bottom: 39px;
+
+  @include vp-tablet {
+    margin-bottom: 33px;
+  }
+
+  @include vp-mobile {
+    text-align-last: left;
+    margin-bottom: 24px;
+  }
+}
+
+.review__description {
+  font-family: $ff-roboto;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 1.5;
+  margin: 0;
+  margin-bottom: 8px;
+
+  @include vp-tablet {
+    width: 80%;
+    margin: 0 auto;
+    margin-bottom: 44px;
+    padding-right: 0;
+  }
+
+  @include vp-mobile {
+    margin: 0;
+    text-align: left;
+    width: 100%;
+    padding-right: 20px;
+  }
+
+  &--more {
+    margin-top: 8px;
+    margin-right: 15px;
+
+    @include vp-tablet {
+      display: none;
+    }
+  }
+}
+
+.review__image {
+  height: 100%;
+  margin-left: auto;
+
+  @include vp-tablet {
+    max-width: none;
+    width: 100%;
+    margin: 0;
+  }
+
+  img {
+    width: 100%;
+    object-fit: cover;
+
+    @include vp-tablet {
+      aspect-ratio: 678/345;
+    }
+
+    @include vp-mobile {
+      aspect-ratio: 320/313;
+    }
+  }
+}
+
+.review__video {
+  position: absolute;
+  left: 53.5%;
+  transform: translateX(-50%);
+  top: 287px;
+
+  @include vp-tablet {
+    top: auto;
+    bottom: 5px;
+    left: 50%;
+    margin-top: 0;
+  }
+
+  @include vp-mobile {
+    position: relative;
+    transform: none;
+    left: 0;
+    right: 0;
+    margin-top: 12px;
   }
 }
