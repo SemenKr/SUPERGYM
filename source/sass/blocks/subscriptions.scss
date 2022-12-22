@@ -18,17 +18,23 @@
 
   h2 {
     font-family: $ff-alumni;
+    font-weight: 600;
+    font-size: 54px;
+    line-height: 1;
+    letter-spacing: 0.03em;
     text-align: center;
     margin-top: 0;
     margin-bottom: 17px;
     margin-right: 0;
 
     @include vp-tablet {
+      font-size: 42px;
       margin-right: 9px;
       margin-bottom: 20px;
     }
 
     @include vp-mobile {
+      font-size: 32px;
       margin-right: 11px;
       margin-bottom: 22px;
     }
