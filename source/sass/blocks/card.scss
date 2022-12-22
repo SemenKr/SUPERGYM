@@ -59,9 +59,9 @@
     }
   }
 
- &:hover,
- &:focus,
- &:active {
+  &:hover,
+  &:focus,
+  &:active {
     border: 7px solid;
     border-image-source: linear-gradient(148.82deg, #d10a42 0.85%, #00359f 100%);
     border-image-slice: 1;
@@ -75,6 +75,8 @@
   color: #103aae;
   z-index: 2;
   margin: -26px 0 0 3px;
+  position: relative;
+  display: block;
 
   @include vp-tablet {
     margin: -35px 0 0 4px;
@@ -83,5 +85,77 @@
   @include vp-mobile {
     font-size: 48px;
     margin: -28px 0 0 4px;
+  }
+
+  &::before {
+    content: attr(data-price);
+    font-style: normal;
+    font-weight: 700;
+    font-size: 100px;
+    color: rgba(232, 232, 232, .48);
+    margin: 0;
+    position: absolute;
+    z-index: -1;
+    bottom: 0;
+    left: 0;
+    display: block;
+
+    @include vp-mobile {
+      font-size: 80px;
+    }
+  }
+
+  svg {
+    @include vp-mobile {
+      width: 24px;
+      height: 33px;
+    }
+  }
+}
+
+.card__button {
+  width: 64%;
+  margin-left: 1px;
+  padding: 26px 10px;
+  padding-bottom: 23px;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 14px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  text-align: center;
+  color: $color-text-dark;
+  outline: 2px solid $color-text-dark;
+  outline-offset: -2px;
+  border: none;
+  transition: color 0.3s ease,
+  transform 0.3s ease,;
+
+  @include hover-focus {
+    color: $color-text-light;
+    background: linear-gradient(97.05deg, #ed0233 17.6%, #003eb7 95.31%);
+    outline: none;
+  }
+
+
+
+  &:active {
+    opacity: 0.7;
+    transform: scale(0.98);
+  }
+
+
+  @include vp-tablet {
+    width: 50%;
+    margin-left: 4px;
+    padding-bottom: 22px;
+  }
+
+  @include vp-mobile {
+    justify-self: flex-start;
+    width: 81%;
+    padding-top: 26px;
+    padding-bottom: 23px;
+    margin-left: 0;
   }
 }

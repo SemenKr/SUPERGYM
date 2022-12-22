@@ -9,35 +9,23 @@
   text-transform: uppercase;
   box-sizing: border-box;
   letter-spacing: 0.05em;
-  margin-left: auto;
   text-align: center;
-
-
 
   color: $color-text-light;
 
   background-color: inherit;
   border: 4px solid $color-default-white;
   cursor: pointer;
-  transition: background 0.3s ease,
-    color 0.3s ease,
-    transform 0.3s ease,
-    opacity 0.3s ease;
-
-
-  &--red {
-    background-color: $color-torch-red;
-  }
+  transition: background 0.3s ease, color 0.3s ease, transform 0.3s ease, opacity 0.3s ease;
 
   &:disabled {
     opacity: 0.5;
-
     pointer-events: none;
   }
 
   @include hover-focus {
     background-color: $color-default-white;
-    color:$color-text-dark;
+    color: $color-text-dark;
   }
 
   &:active {
