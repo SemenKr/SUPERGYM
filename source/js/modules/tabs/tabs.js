@@ -24,9 +24,6 @@ const initTabs = () => {
       }
     });
   }
-
-  tabsBtn.click();
-
 };
 
 export {initTabs};
