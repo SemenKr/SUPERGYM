@@ -2,8 +2,9 @@
 // ---------------------------------
 
 @import "vendor/normalize";
-// Swiper 7.4.1
-// @import "vendor/swiper";
+
+@import "../../node_modules/swiper/swiper.scss";
+@import "../../node_modules/swiper/modules/navigation/navigation.scss";
 
 // Global
 // ---------------------------------
@@ -30,6 +31,9 @@
 @import "blocks/tabs";
 @import "blocks/card";
 @import "blocks/competition";
+@import "blocks/coaches";
+@import "blocks/swiper-btn.scss";
+@import "blocks/features";
 @import "blocks/footer";
 @import "blocks/navigation";
 @import "blocks/social";
