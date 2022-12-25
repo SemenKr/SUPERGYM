@@ -2109,6 +2109,7 @@ button,
   background-color: #f8f9fc;
   padding-top: 144px;
   padding-bottom: 85px;
+  color: #102654;
 }
 
 .features__container {
@@ -2129,6 +2130,9 @@ button,
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-column-gap: 30px;
+  -moz-column-gap: 30px;
+  column-gap: 30px;
 }
 
 .features__item--accent {

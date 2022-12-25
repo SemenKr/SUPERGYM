@@ -2,6 +2,7 @@
   background-color: #f8f9fc;
   padding-top: 144px;
   padding-bottom: 85px;
+  color: $color-text-dark;
 
   @include vp-tablet {
     padding-top: 90px;
@@ -25,6 +26,7 @@
 
 .features__item {
   display: flex;
+  column-gap: 30px;
 
   @include vp-mobile {
     flex-direction: column;
