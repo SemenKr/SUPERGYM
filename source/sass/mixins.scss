@@ -51,7 +51,7 @@
 }
 
 @mixin vp-tablet {
-  @media (max-width: ($vp-1280 - 1px)) {
+  @media (max-width: ($vp-1200 - 1px)) {
     @content;
   }
 }

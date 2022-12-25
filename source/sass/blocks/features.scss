@@ -2,11 +2,15 @@
   background-color: #f8f9fc;
   padding-top: 144px;
   padding-bottom: 85px;
+  padding-left: 30px;
+  padding-right: 30px;
   color: $color-text-dark;
 
   @include vp-tablet {
     padding-top: 90px;
     padding-bottom: 95px;
+    padding-left: 15px;
+    padding-right: 15px;
   }
 
   @include vp-mobile {
@@ -14,6 +18,28 @@
     padding-left: 0;
     padding-right: 0;
     padding-bottom: 62px;
+  }
+
+  h2 {
+    margin: 0;
+    margin-bottom: 12px;
+    margin-left: 10px;
+    font-weight: 600;
+    font-size: 54px;
+    line-height: 1;
+    letter-spacing: 0.03em;
+    margin-bottom: 55px;
+
+    @include vp-tablet {
+      margin-left: 0;
+      margin-right: 22px;
+      font-size: 50.4px;
+      margin-bottom: 60px;
+    }
+
+    @include vp-mobile {
+      font-size: 32px;
+    }
   }
 }
 
@@ -31,6 +57,7 @@
   @include vp-mobile {
     flex-direction: column;
     align-items: center;
+    text-align: center;
     overflow: auto;
     padding-left: 15px;
     padding-right: 15px;
@@ -56,6 +83,7 @@
       height: 239px;
       scrollbar-width: none;
       overflow-y: scroll;
+      justify-self: center;
     }
 
     @include vp-mobile {
@@ -202,6 +230,39 @@
   }
 }
 
+.features__text {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  align-items: flex-start;
+  margin-left: 30px;
+  margin-top: 11px;
+
+  @include vp-tablet {
+    margin-left: 30px;
+    margin-top: 6px;
+  }
+
+  @include vp-mobile {
+    margin-left: 0;
+    align-items: center;
+    text-align: center;
+    margin-top: 14px;
+  }
+
+  p {
+    width: 95%;
+
+    @include vp-tablet {
+      width: 94%;
+    }
+
+    @include vp-mobile{
+      width: 80%;
+    }
+  }
+}
+
 .features__list {
   margin: 0;
   padding: 0;
@@ -211,11 +272,13 @@
 
   @include vp-tablet {
     grid-template-columns: 1fr 1fr;
-    column-gap: 50px;
+    gap: 50px;
   }
 
   @include vp-mobile {
     display: flex;
     flex-direction: column;
+    width: 100%;
+    row-gap: 50PX;
   }
 }
