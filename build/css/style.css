@@ -1162,6 +1162,10 @@ button,
   margin-top: 9px;
 }
 
+.logo--footer svg {
+  width: 88px;
+}
+
 .phone__link {
   font-family: "Alumni Sans", "Arial", sans-serif;
   font-style: normal;
@@ -2620,7 +2624,6 @@ button,
   -webkit-column-gap: 30px;
   -moz-column-gap: 30px;
   column-gap: 30px;
-  row-gap: 30px;
   -ms-grid-columns: 1fr 1fr;
   grid-template-columns: 1fr 1fr;
   -webkit-box-pack: end;
@@ -2639,6 +2642,7 @@ button,
   color: #ffffff;
   margin: 0;
   margin-right: 21px;
+  margin-bottom: 10px;
   grid-column: 1/-1;
 }
 
@@ -2648,7 +2652,7 @@ button,
   border: none;
   outline: none;
   border-bottom: 1px solid #74819c;
-  padding: 10px 0;
+  padding: 10px 0 6px;
   color: #ffffff;
 }
 
@@ -2718,6 +2722,7 @@ button,
   background-color: inherit;
   width: 100%;
   padding: 17px 21px;
+  margin-top: 28px;
   font-weight: 700;
   font-size: 14px;
   line-height: 16px;
@@ -2746,10 +2751,10 @@ button,
 
 .contacts {
   padding-top: 56px;
-  padding-bottom: 68px;
+  padding-bottom: 15px;
   padding-left: 120px;
   margin-right: auto;
-  max-width: 580px;
+  max-width: 585px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2781,9 +2786,12 @@ button,
   display: grid;
   -ms-grid-columns: (1fr)[2];
   grid-template-columns: repeat(2, 1fr);
-  gap: 18px 120px;
+  -webkit-column-gap: 120px;
+  -moz-column-gap: 120px;
+  column-gap: 120px;
+  row-gap: 18px;
   position: relative;
-  padding-left: 3px;
+  margin-left: 3px;
 }
 
 .contacts__list::before {
@@ -2810,6 +2818,11 @@ button,
   margin-bottom: 2px;
 }
 
+.contacts__list p {
+  margin: 0;
+  font-size: 14px;
+}
+
 .contacts__list a {
   font-weight: 400;
   font-size: 14px;
@@ -2833,7 +2846,7 @@ button,
 
 .footer {
   background-color: #030a1a;
-  padding-top: 40px;
+  padding-top: 46px;
   padding-bottom: 41px;
 }
 
@@ -2854,6 +2867,8 @@ button,
 }
 
 .navigation__list {
+  font-size: 14px;
+  line-height: 1;
   list-style-type: none;
   padding: 0;
   margin: 0;
@@ -2862,7 +2877,7 @@ button,
   display: flex;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
-  gap: 40px;
+  gap: 34px;
 }
 
 .navigation__list a {
@@ -3523,7 +3538,7 @@ button,
   }
 
   .contacts h2 {
-    margin-bottom: 33px;
+    margin-bottom: 35px;
   }
 
   .contacts__list {

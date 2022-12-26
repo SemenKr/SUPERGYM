@@ -5,7 +5,6 @@
   margin-left: auto;
   display: grid;
   column-gap: 30px;
-  row-gap: 30px;
   grid-template-columns: 1fr 1fr;
   justify-content: end;
   padding-right: 170px;
@@ -36,6 +35,7 @@
     color: $color-text-light;
     margin: 0;
     margin-right: 21px;
+    margin-bottom: 10px;
     grid-column: 1/-1;
 
     @include vp-tablet {
@@ -60,7 +60,7 @@
     border: none;
     outline: none;
     border-bottom: 1px solid #74819c;
-    padding: 10px 0;
+    padding: 10px 0 6px;
     color: $color-text-light;
 
     &::placeholder {
@@ -83,6 +83,7 @@
   background-color: inherit;
   width: 100%;
   padding: 17px 21px;
+  margin-top: 28px;
   font-weight: 700;
   font-size: 14px;
   line-height: 16px;

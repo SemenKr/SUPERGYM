@@ -1,9 +1,9 @@
 .contacts {
   padding-top: 56px;
-  padding-bottom: 68px;
+  padding-bottom: 15px;
   padding-left: 120px;
   margin-right: auto;
-  max-width: 580px;
+  max-width: 585px;
   display: flex;
   justify-self: flex-start;
   flex-direction: column;
@@ -33,7 +33,7 @@
     max-width: fit-content;
 
     @include vp-tablet {
-      margin-bottom: 33px;
+      margin-bottom: 35px;
     }
 
     @include vp-mobile {
@@ -48,9 +48,10 @@
   list-style: none;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: 18px 120px;
+  column-gap: 120px;
+  row-gap: 18px;
   position: relative;
-  padding-left: 3px;
+  margin-left: 3px;
 
   @include vp-tablet {
     column-gap: 66px;
@@ -102,6 +103,11 @@
     @include vp-mobile {
       margin-bottom: 5px;
     }
+  }
+
+  p {
+    margin: 0;
+    font-size: 14px;
   }
   a {
     font-weight: 400;
