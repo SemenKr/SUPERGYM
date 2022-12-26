@@ -210,8 +210,9 @@
         </div>
         <div class="subscriptions__bg">
           <picture>
-            <source type="image/webp" media="(min-width: 768px)" srcset="img/subscription-bg-tablet@1x.webp  1x, img/subscription-bg-tablet@2x.webp 2x">
-            <img src="img/subscription-bg@2x.webp" alt="Розовые блины" width="260" height="294">
+            <source type="image/webp" media="(min-width:1200px)" srcset="img/subscriptions-bg@1x.webp 1x, img/subscriptions-bg@2x.webp 2x">
+            <source type="image/webp" media="(min-width: 768px)" srcset="img/subscriptions-bg-tablet@1x.webp  1x, img/subscriptions-bg-tablet@2x.webp 2x">
+            <img src="img/subscriptions-bg@2x.webp" alt="Красные блины" width="321" height="384">
           </picture>
         </div>
       </section>
@@ -415,7 +416,7 @@
               </div>
             </li>
             <li class="features__item features__item--line">
-              <div class="features__numbers">
+              <div class="features__numbers features__numbers--right-column">
                 <p>70</p>
                 <span>машин</span>
               </div>
@@ -431,7 +432,7 @@
               </div>
               <p>Современные тренажеры на все группы мышц</p>
             </li>
-            <li class="features__item">
+            <li class="features__item features__item--bottom ">
               <div class="features__numbers">
                 <p>350</p>
                 <span>мест</span>
@@ -441,8 +442,8 @@
                 <p>Просторные раздевалки, душевые, фен, Wi-Fi, кулеры</p>
               </div>
             </li>
-            <li class="features__item">
-              <div class="features__numbers">
+            <li class="features__item features__item--bottom">
+              <div class="features__numbers features__numbers--right-column">
                 <p>5+</p>
                 <span>лет</span>
               </div>
@@ -492,35 +493,72 @@
           <h2>Отзывы</h2>
           <div class="swiper feedback__swiper">
             <!-- Additional required wrapper -->
-            <div class="swiper-wrapper">
+            <div class="swiper-wrapper feedback__swiper-wrapper">
               <!-- Slides -->
               <div class="swiper-slide feedback__item">
                 <h3>Анна Орлова</h3>
-            <img src="img/feedback-photo-1.webp" width="80" height="80" alt="Аватар автора">
-            <p>&laquo;Хожу в&nbsp;SuperClub уже больше года. Нравится, что в&nbsp;клубе всегда чисто, тренажеры
-              обновляют, персонал дружелюбный. Зал просторный, даже в&nbsp;вечернее время нет очередей&raquo;
-            </p>
+                <img src="img/feedback-photo-1.webp" width="80" height="80" alt="Аватар автора">
+                <p>&laquo;Хожу в&nbsp;SuperClub уже больше года. Нравится, что в&nbsp;клубе всегда чисто, тренажеры
+                  обновляют, персонал дружелюбный. Зал просторный, даже в&nbsp;вечернее время нет очередей&raquo;
+                </p>
               </div>
               <div class="swiper-slide feedback__item">
                 <h3>Анна Орлова</h3>
-            <img src="https://picsum.photos/80/81" width="80" height="80" alt="Аватар автора">
-            <p>&laquo;Хожу в&nbsp;SuperClub уже больше года. Нравится, что в&nbsp;клубе всегда чисто, тренажеры
-              обновляют, персонал дружелюбный. Зал просторный, даже в&nbsp;вечернее время нет очередей&raquo;
-            </p>
+                <img src="https://picsum.photos/80/81" width="80" height="80" alt="Аватар автора">
+                <p>&laquo;Хожу в&nbsp;SuperClub уже больше года. Нравится, что в&nbsp;клубе всегда чисто, тренажеры
+                  обновляют, персонал дружелюбный. Зал просторный, даже в&nbsp;вечернее время нет очередей&raquo;
+                </p>
               </div>
               <div class="swiper-slide feedback__item">
                 <h3>Анна Орлова</h3>
-            <img src="https://picsum.photos/80/80" width="80" height="80" alt="Аватар автора">
-            <p>&laquo;Хожу в&nbsp;SuperClub уже больше года. Нравится, что в&nbsp;клубе всегда чисто, тренажеры
-              обновляют, персонал дружелюбный. Зал просторный, даже в&nbsp;вечернее время нет очередей&raquo;
-            </p>
+                <img src="https://picsum.photos/80/80" width="80" height="80" alt="Аватар автора">
+                <p>&laquo;Хожу в&nbsp;SuperClub уже больше года. Нравится, что в&nbsp;клубе всегда чисто, тренажеры
+                  обновляют, персонал дружелюбный. Зал просторный, даже в&nbsp;вечернее время нет очередей&raquo;
+                </p>
               </div>
               ...
             </div>
           </div>
+          <div class="swiper-button-prev swiper-button-prev--feedback"></div>
+          <div class="swiper-button-next swiper-button-next--feedback"></div>
           <!-- If we need navigation buttons -->
-          <div class="swiper-button-prev"></div>
-          <div class="swiper-button-next"></div>
+        </div>
+      </section>
+      <section class="order">
+        <div class="order__form">
+          <form class="form" action="https://echo.htmlacademy.ru" method="post" autocomplete="off">
+            <h2>Бесплатное занятие</h2>
+            <div class="form__field">
+              <label class="visually-hidden" for="name"></label>
+              <input autocomplete="off" type="text" name="name" data-error="Ошибка" placeholder="Имя" id="name" required minlength="1" maxlength="45">
+            </div>
+            <div class="form__field">
+              <label class="visually-hidden" for="tel">Телефон</label>
+              <input autocomplete="off" type="text" name="form[]" data-error="Ошибка" placeholder="Телефон" id="tel" maxlength="10" required>
+            </div>
+            <button class="form__button" type="submit" data-button="submit-button">отправить</button>
+          </form>
+        </div>
+        <div class="order__contacts contacts">
+          <h2>Контакты</h2>
+          <ul class="contacts__list">
+            <li>
+              <h3>Адрес:</h3>
+              <address><a href="https://yandex.ru/maps/-/CCUr4XBc2D">г. Омск, ул.&nbsp;60&nbsp;лет Октября, 7</a></address>
+            </li>
+            <li>
+              <h3>Телефон:</h3>
+              <a href="tel:+88005555555">8-800-555-55-55</a>
+            </li>
+            <li>
+              <h3>График работы:</h3>
+              <p>Пн-Вс: с 8:00 до 22:00</p>
+            </li>
+            <li>
+              <h3>Email:</h3>
+              <a href="mailto:omsk@supergym.ru">omsk@supergym.ru</a>
+            </li>
+          </ul>
         </div>
       </section>
     </main>

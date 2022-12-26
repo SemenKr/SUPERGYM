@@ -1,0 +1,119 @@
+.form {
+  background-color: $color-text-dark;
+  padding-top: 56px;
+  padding-bottom: 68px;
+  margin-left: auto;
+  display: grid;
+  column-gap: 30px;
+  row-gap: 30px;
+  grid-template-columns: 1fr 1fr;
+  justify-content: end;
+  padding-right: 170px;
+  max-width: 580px;
+
+  @include vp-tablet {
+    padding: 0 45px;
+    padding-bottom: 68px;
+    padding-top: 62px;
+    justify-content: center;
+    max-width: 100%;
+    column-gap: 60px;
+  }
+
+  @include vp-mobile {
+    width: 100%;
+    padding: 65px 15px;
+    padding-bottom: 70px;
+    grid-template-columns: 1fr;
+  }
+
+  h2 {
+    font-family: $ff-alumni;
+    font-weight: 800;
+    font-size: 54px;
+    line-height: 1.56;
+    letter-spacing: 0.03em;
+    color: $color-text-light;
+    margin: 0;
+    margin-right: 21px;
+    grid-column: 1/-1;
+
+    @include vp-tablet {
+      font-size: 42px;
+      line-height: 50px;
+      font-weight: 700;
+      margin-bottom: 15px;
+      margin-right: 0;
+    }
+
+    @include vp-mobile {
+      font-size: 32px;
+      line-height: 38px;
+      font-weight: 600;
+      margin-bottom: 0;
+    }
+  }
+
+  input {
+    background-color: transparent;
+    width: 100%;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid #74819c;
+    padding: 10px 0;
+    color: $color-text-light;
+
+    &::placeholder {
+      color: $color-text-light;
+      font-family: $ff-roboto;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 16;
+    }
+
+    &:hover::placeholder {
+      color: #ed0233;
+    }
+  }
+}
+
+.form__button {
+  grid-column: 1/-1;
+  border: 3px solid $color-text-light;
+  background-color: inherit;
+  width: 100%;
+  padding: 17px 21px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: $color-text-light;
+  cursor: pointer;
+  transition: color 0.3s ease,
+  border 0.3s ease,
+  background 0.3s ease,
+  transform 0.3s ease;
+
+  @include vp-tablet {
+    padding-top: 17px;
+    padding-bottom: 16px;
+  }
+
+  @include vp-mobile {
+    max-width: 290px;
+    padding-top: 16px;
+    padding-bottom: 15px;
+    align-self: center;
+  }
+
+  &:hover {
+    color: $color-text-dark;
+    background-color: $color-text-light;
+  }
+
+  &:active {
+    opacity: 0.9;
+    transform: scale(0.98);
+  }
+}

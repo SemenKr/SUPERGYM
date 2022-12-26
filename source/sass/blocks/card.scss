@@ -1,7 +1,6 @@
 .card {
   font-family: $ff-roboto;
-  padding: 68px 10px;
-  padding-top: 55px;
+  padding: 30px 10px;
   padding-bottom: 60px;
   background-color: $color-default-white;
   display: flex;
@@ -48,7 +47,7 @@
     font-size: 16px;
     line-height: 1.5;
     color: #495a7d;
-    margin-bottom: 67px;
+    margin-bottom: 64px;
 
     @include vp-tablet {
       margin-bottom: 76px;
@@ -74,7 +73,7 @@
   line-height: 1.5;
   color: #103aae;
   z-index: 2;
-  margin: -26px 0 0 3px;
+  margin: 0 0 35px 3px;
   position: relative;
   display: block;
 
@@ -96,8 +95,8 @@
     margin: 0;
     position: absolute;
     z-index: -1;
-    bottom: 0;
-    left: 0;
+    bottom: -6px;
+    left: -21px;
     display: block;
 
     @include vp-mobile {

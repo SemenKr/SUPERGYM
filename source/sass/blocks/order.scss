@@ -1,0 +1,12 @@
+.order {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+
+  @include vp-tablet {
+    grid-template-columns: 1fr;
+  }
+}
+
+.order__form {
+  background-color: $color-text-dark;
+}

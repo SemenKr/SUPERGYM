@@ -1,0 +1,130 @@
+.contacts {
+  padding-top: 56px;
+  padding-bottom: 68px;
+  padding-left: 120px;
+  margin-right: auto;
+  max-width: 580px;
+  display: flex;
+  justify-self: flex-start;
+  flex-direction: column;
+
+  @include vp-tablet {
+    padding: 0 45px;
+    padding-bottom: 68px;
+    padding-top: 62px;
+    max-width: 100%;
+    column-gap: 60px;
+  }
+
+  @include vp-mobile {
+    width: 100%;
+    padding: 65px 15px;
+    padding-bottom: 70px;
+  }
+
+  h2 {
+    font-family: $ff-alumni;
+    font-weight: 600;
+    font-size: 54px;
+    line-height: 65px;
+    letter-spacing: 0.03em;
+    margin: 0;
+    margin-bottom: 36px;
+    max-width: fit-content;
+
+    @include vp-tablet {
+      margin-bottom: 33px;
+    }
+
+    @include vp-mobile {
+      margin-bottom: 34px;
+    }
+  }
+}
+
+.contacts__list {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 18px 120px;
+  position: relative;
+  padding-left: 3px;
+
+  @include vp-tablet {
+    column-gap: 66px;
+    row-gap: 18px;
+    padding-left: 0;
+  }
+
+  @include vp-mobile {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 20px;
+  }
+
+  &::before {
+    content: "";
+    width: 1px;
+    background-color: #74819c;
+    position: absolute;
+    top: 5px;
+    bottom: 5px;
+    left: 51%;
+    transform: translateX(-50%);
+
+    @include vp-tablet {
+      left: 53%;
+      top: 7px;
+      bottom: 8px;
+    }
+
+    @include vp-mobile {
+      display: none;
+    }
+  }
+
+  h3 {
+    margin: 0;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.5;
+    max-width: fit-content;
+    margin-bottom: 2px;
+
+    @include vp-tablet {
+      font-size: 20px;
+      margin-bottom: 4px;
+    }
+
+    @include vp-mobile {
+      margin-bottom: 5px;
+    }
+  }
+  a {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 21px;
+    display: block;
+    max-width: 100%;
+
+    transition: color 0.3s ease 0s;
+
+    @include vp-tablet {
+      font-size: 18px;
+      line-height: 27px;
+    }
+
+    &:hover,
+    &:focus,
+    &:active {
+      color: #ed0233;
+    }
+  }
+
+  address {
+    font-style: normal;
+  }
+}

@@ -1,5 +1,5 @@
 .coaches {
-  padding: 30px 30px 93px;
+  padding: 30px 30px 89px;
   display: flex;
   justify-content: center;
 
@@ -15,6 +15,25 @@
     padding-right: 47px;
     padding-bottom: 70px;
     padding-top: 30px;
+  }
+
+  h2 {
+    font-family: $ff-alumni;
+    font-weight: 600;
+    font-size: 54px;line-height: 1;letter-spacing: 0.03em;text-align: left;
+    align-self: flex-start;
+    margin: 0;
+    margin-top: 5px;
+    margin-bottom: 55px;
+
+    @include vp-tablet {
+      align-self: center;
+      font-size: 42px;
+    }
+
+    @include vp-mobile {
+      font-size: 32px;
+    }
   }
 }
 

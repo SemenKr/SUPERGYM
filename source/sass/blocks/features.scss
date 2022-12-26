@@ -1,7 +1,7 @@
 .features {
   background-color: #f8f9fc;
-  padding-top: 144px;
-  padding-bottom: 85px;
+  padding-top: 152px;
+  padding-bottom: 62px;
   padding-left: 30px;
   padding-right: 30px;
   color: $color-text-dark;
@@ -21,6 +21,7 @@
   }
 
   h2 {
+    font-family: $ff-alumni;
     margin: 0;
     margin-bottom: 12px;
     margin-left: 10px;
@@ -28,7 +29,7 @@
     font-size: 54px;
     line-height: 1;
     letter-spacing: 0.03em;
-    margin-bottom: 55px;
+    margin-bottom: 49px;
 
     @include vp-tablet {
       margin-left: 0;
@@ -48,11 +49,12 @@
   flex-direction: column;
   align-items: center;
   position: relative;
+  max-width: 1040px;
+  margin: 0 auto;
 }
 
 .features__item {
   display: flex;
-  column-gap: 30px;
 
   @include vp-mobile {
     flex-direction: column;
@@ -68,12 +70,13 @@
     color: $color-text-light;
     grid-column: 2/3;
     grid-row: 1/3;
-    margin: auto 0;
+    margin-bottom: auto;
     background-color: #1c3374;
     width: 240px;
     display: flex;
     flex-direction: column;
-    padding: 58px 34px 66px;
+    padding: 58px 34px 57px;
+    margin-top: 11px;
 
     @include vp-tablet {
       grid-column: 1/-1;
@@ -101,10 +104,15 @@
 
   &--line {
     border-bottom: 2px solid rgba(209, 10, 66, 0.2);
+    padding-bottom: 75px;
 
     @include vp-tablet {
       border: none;
     }
+  }
+
+  &--bottom {
+    padding-top: 70px;
   }
 
   h3 {
@@ -142,6 +150,10 @@
   @include vp-mobile {
     margin-left: 0;
     align-items: center;
+  }
+
+  &--right-column {
+    margin-left: 0;
   }
 
   p {
@@ -202,7 +214,6 @@
     font-size: 74px;
     line-height: 1;
     text-align: center;
-    margin-bottom: 4px;
     width: auto;
 
     @include vp-tablet {

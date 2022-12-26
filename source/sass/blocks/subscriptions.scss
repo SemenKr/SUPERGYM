@@ -1,6 +1,6 @@
 .subscriptions {
   background-color: #f8f9fc;
-  padding:120px 45px 119px;
+  padding:125px 45px 119px;
   position: relative;
   align-items: center;
   color: $color-text-dark;
@@ -24,8 +24,8 @@
     letter-spacing: 0.03em;
     text-align: center;
     margin-top: 0;
-    margin-bottom: 17px;
-    margin-right: 0;
+    margin-bottom: 22px;
+    margin-right: 5px;
 
     @include vp-tablet {
       font-size: 42px;
