@@ -16,7 +16,6 @@
 
   @include vp-mobile {
     padding: 23px 10px 50px;
-
   }
 
   h3 {
@@ -90,7 +89,7 @@
     font-style: normal;
     font-weight: 700;
     font-size: 100px;
-    color: rgba(232, 232, 232, .48);
+    color: rgba(232, 232, 232, 0.48);
     margin: 0;
     position: absolute;
     z-index: -1;
@@ -125,8 +124,7 @@
   outline: 2px solid $color-text-dark;
   outline-offset: -2px;
   border: none;
-  transition: color 0.3s ease,
-  transform 0.3s ease,;
+  transition: color 0.3s ease, transform 0.3s ease;
 
   @include hover-focus {
     color: $color-text-light;
@@ -134,13 +132,10 @@
     outline: none;
   }
 
-
-
   &:active {
     opacity: 0.7;
     transform: scale(0.98);
   }
-
 
   @include vp-tablet {
     width: 50%;

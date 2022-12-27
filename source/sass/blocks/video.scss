@@ -51,6 +51,7 @@
     z-index: 1;
   }
 }
+
 .video__media {
   position: absolute;
   top: 0;
@@ -112,14 +113,13 @@
   display: none;
 }
 
-/* Enabled */
-
 .video--enabled {
   cursor: pointer;
 
   iframe {
     object-fit: cover;
     height: 100%;
+    
     @include vp-tablet {
       max-width: 266px;
       height: 100%;
