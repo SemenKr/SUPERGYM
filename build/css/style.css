@@ -774,6 +774,7 @@ body {
   margin: 0;
   padding: 0;
   min-height: 100vh;
+  overflow-x: hidden;
 }
 
 html {
@@ -1544,6 +1545,7 @@ button,
 .subscriptions__container {
   margin: 0 auto;
   max-width: 1160px;
+  position: relative;
 }
 
 .subscriptions__list {
@@ -1564,8 +1566,8 @@ button,
 .subscriptions__bg {
   background-color: transparent;
   position: absolute;
-  bottom: -153px;
-  right: 0;
+  bottom: -45%;
+  right: -24.6%;
 }
 
 .subscriptions__bg img {
@@ -2254,15 +2256,16 @@ button,
   line-height: 1;
 }
 
-.features__item p {
-  padding: 0;
-  margin: 0;
-  font-weight: 300;
-  font-size: 16px;
-  line-height: 1.4;
-}
-
 .features__numbers {
+  margin: 0;
+  font-weight: 700;
+  font-size: 71px;
+  line-height: 1;
+  background: -o-linear-gradient(307.49deg, #d10a42 0%, #0041ca 87.33%);
+  background: linear-gradient(142.51deg, #d10a42 0%, #0041ca 87.33%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
   margin-left: 20px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -2278,17 +2281,6 @@ button,
 
 .features__numbers--right-column {
   margin-left: 0;
-}
-
-.features__numbers p {
-  font-weight: 700;
-  font-size: 71px;
-  line-height: 1;
-  background: -o-linear-gradient(307.49deg, #d10a42 0%, #0041ca 87.33%);
-  background: linear-gradient(142.51deg, #d10a42 0%, #0041ca 87.33%);
-  -webkit-background-clip: text;
-  background-clip: text;
-  -webkit-text-fill-color: transparent;
 }
 
 .features__numbers span {
@@ -2344,6 +2336,10 @@ button,
 
 .features__text p {
   width: 95%;
+  margin: 0;
+  font-size: 16px;
+  line-height: 1.4;
+  font-weight: 300;
 }
 
 .features__list {
@@ -3209,7 +3205,11 @@ button,
   }
 
   .subscriptions__bg {
-    bottom: -127px;
+    bottom: -16%;
+    right: -60%;
+    -webkit-transform: scale(0.9);
+    -ms-transform: scale(0.9);
+    transform: scale(0.9);
   }
 
   .tabs__nav {
@@ -3436,7 +3436,7 @@ button,
     margin-bottom: 5px;
   }
 
-  .features__numbers p {
+  .features__numbers {
     font-size: 58px;
   }
 
