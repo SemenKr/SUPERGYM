@@ -2,6 +2,7 @@
   padding: 30px 30px 89px;
   display: flex;
   justify-content: center;
+  position: relative;
 
   @include vp-tablet {
     padding-bottom: 103px;
@@ -20,7 +21,10 @@
   h2 {
     font-family: $ff-alumni;
     font-weight: 600;
-    font-size: 54px;line-height: 1;letter-spacing: 0.03em;text-align: left;
+    font-size: 54px;
+    line-height: 1;
+    letter-spacing: 0.03em;
+    text-align: left;
     align-self: flex-start;
     margin: 0;
     margin-top: 5px;
@@ -54,7 +58,7 @@
 }
 
 .coaches__item {
-  background-color: rgba(20, 101, 214, 0.745);
+  background-color: #afb7c1;
   position: relative;
   aspect-ratio: 260/294;
 
@@ -72,6 +76,15 @@
   top: 0;
   left: 0;
   bottom: 0;
+  aspect-ratio: 260/294;
+
+  @include vp-tablet {
+    aspect-ratio: 268/294;
+  }
+
+  @include vp-mobile {
+    aspect-ratio: 226/274;
+  }
 
   &::before {
     content: attr(data-coach);
@@ -89,6 +102,7 @@
   img {
     display: block;
     width: 100%;
+    height: 100%;
     object-fit: cover;
   }
 }
@@ -99,24 +113,31 @@
   bottom: 0;
   left: 0;
   color: $color-text-light;
-  z-index:3;
+  z-index: 3;
   transform: scale(0);
   transition: 0.3s ease 0s;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
-  padding-bottom: 10%;padding-left: 26px;padding-right: 26px;padding-top: 21%;
+  padding-bottom: 10%;
+  padding-left: 26px;
+  padding-right: 26px;
+  padding-top: 19%;
   overflow: hidden;
-
 
   @include vp-mobile {
     padding-top: 19%;
   }
 
+  h3 {
+    margin: 0 0 -2px;
+    font-size: 18px;
+    line-height: 1.5;
+  }
 
-  &::before{
-    content:'';
+  &::before {
+    content: "";
     background-color: rgba(16, 38, 84, 0.89);
     position: absolute;
     top: 0;
@@ -129,6 +150,9 @@
   ul {
     margin: 0;
     padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 13px;
     list-style: disc;
     padding-left: 45px;
     overflow: auto;
@@ -168,21 +192,10 @@
     font-family: $ff-roboto;
     font-weight: 400;
     font-size: 14px;
-    line-height: 1;
+    line-height: 21px;
     color: $color-default-white;
-    margin-bottom: 15%;
-
-    &:last-child {
-      margin-bottom: 0;
-    }
-
-    @include vp-tablet {
-      margin-bottom: 14%;
-    }
-
-    @include vp-mobile {
-      margin-bottom: 16%;
-    }
+   padding: 0;
+   text-align: left;
   }
 }
 

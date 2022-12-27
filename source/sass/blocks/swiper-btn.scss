@@ -37,17 +37,17 @@
 }
 
 .swiper-button-prev {
-  left:25%;
-  margin-top: 5px;
+  left: 3%;
+  margin-top: 3px;
 
   @include vp-tablet {
-    left: -11%;
-    margin-top: 20px;
+    left: 5%;
+    margin-top: -17px;
   }
 
   @include vp-mobile {
-    left: -18%;
-    margin-top: 20px;
+    left: 2%;
+    margin-top: 0;
   }
 
   &--feedback {
@@ -66,17 +66,17 @@
   }
 }
 .swiper-button-next {
-  right: -62px;
-  margin-top: 33px;
+  right: 3%;
+  margin-top: 3px;
 
   @include vp-tablet {
-    right: -11%;
-    margin-top: 20px;
+    right: 5%;
+    margin-top: -17px;
   }
 
   @include vp-mobile {
-    right: -18%;
-    margin-top: 20px;
+    right: 2%;
+    margin-top: 0;
   }
 
 

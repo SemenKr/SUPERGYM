@@ -119,6 +119,7 @@
 
   iframe {
     object-fit: cover;
+    height: 100%;
     @include vp-tablet {
       max-width: 266px;
       height: 100%;
