@@ -9,7 +9,7 @@
   }
 
   @include vp-mobile {
-    padding-top: 70px;
+    padding-top: 71px;
     padding-bottom: 34px;
   }
 }
@@ -43,9 +43,9 @@
 
   @include vp-mobile {
     width: 100%;
-    padding: 50px 44px;
+    padding: 48px 44px;
     max-width: none;
-    padding-bottom: 44px;
+    padding-bottom: 40px;
     padding-top: 49px;
   }
 
@@ -70,6 +70,7 @@
 
     @include vp-mobile {
       margin-top: 3px;
+      margin-bottom: 5px;
     }
   }
 }
@@ -101,7 +102,7 @@
   }
 
   @include vp-mobile {
-    margin-top: 30px;
+    margin-top: 27px;
     padding-top: 13px;
     padding-bottom: 13px;
   }
@@ -162,7 +163,7 @@
     }
 
     @include vp-mobile {
-      margin-top: 6px;
+      margin-top: 0;
     }
   }
 
@@ -175,6 +176,10 @@
     @include vp-tablet {
       padding-bottom: 5px;
       padding-top: 2px;
+    }
+
+    @include vp-mobile {
+      padding-bottom: 3px;
     }
   }
 }

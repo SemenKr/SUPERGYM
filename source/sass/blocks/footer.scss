@@ -4,12 +4,12 @@
   padding-bottom: 41px;
 
   @include vp-tablet {
-  padding-top: 45px;
-  padding-bottom: 44px;
+    padding-top: 45px;
+    padding-bottom: 44px;
   }
 
   @include vp-mobile {
-    padding-top: 54px;
+    padding-top: 50px;
     padding-bottom: 48px;
   }
 }
@@ -19,8 +19,9 @@
   grid-template-columns: auto 1fr auto;
   gap: 20px;
 
-  @include  vp-mobile {
-    grid-template-columns:auto;
+  @include vp-mobile {
+    grid-template-columns: auto;
+    gap: 14px;
   }
 }
 
@@ -28,13 +29,12 @@
   margin: 0 auto;
 }
 
-
 .footer__wrapper-logo-nav {
   display: contents;
   @include vp-mobile {
     display: block;
     column-count: 2;
-    gap:70px;
+    gap: 29px;
     column-fill: balance;
   }
 }

@@ -19,5 +19,14 @@
   svg {
     width: 88px;
 
+    @include vp-tablet {
+      width: 82px;
+    }
+
+    @include vp-mobile {
+      width: 68px;
+      margin-bottom: 5px;
+    }
+
   }
 }

@@ -15,9 +15,8 @@
   }
 
   @include vp-mobile {
-    padding: 55px 10px;
-    padding-top: 42px;
-    padding-bottom: 47px;
+    padding: 23px 10px 50px;
+
   }
 
   h3 {
@@ -54,7 +53,7 @@
     }
 
     @include vp-mobile {
-      margin-bottom: 59px;
+      margin-bottom: 56px;
     }
   }
 
@@ -83,7 +82,7 @@
 
   @include vp-mobile {
     font-size: 48px;
-    margin: -28px 0 0 4px;
+    margin: 0 0 30px;
   }
 
   &::before {

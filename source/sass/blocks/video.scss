@@ -11,8 +11,8 @@
 
   @include vp-mobile {
     width: 100%;
-    height: auto;
     background-size: cover;
+    aspect-ratio: 320 / 167;
   }
 
   &--enabled {
@@ -23,6 +23,11 @@
     @include vp-tablet {
       width: 266px;
       height: 167px;
+    }
+
+    @include vp-mobile {
+      width:  100%;
+      aspect-ratio: 320 / 167;
     }
   }
 }
@@ -53,6 +58,10 @@
   width: 100%;
   height: 100%;
   border: none;
+
+  @include vp-mobile {
+    aspect-ratio: 320 / 167;
+  }
 }
 
 .video__button {

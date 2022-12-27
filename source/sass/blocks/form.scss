@@ -11,9 +11,7 @@
   max-width: 580px;
 
   @include vp-tablet {
-    padding: 0 45px;
-    padding-bottom: 68px;
-    padding-top: 62px;
+    padding: 62px 161px 68px 132px;
     justify-content: center;
     max-width: 100%;
     column-gap: 60px;
@@ -24,6 +22,7 @@
     padding: 65px 15px;
     padding-bottom: 70px;
     grid-template-columns: 1fr;
+    row-gap: 26px;
   }
 
   h2 {
@@ -42,7 +41,7 @@
       font-size: 42px;
       line-height: 50px;
       font-weight: 700;
-      margin-bottom: 15px;
+      margin-bottom: 25px;
       margin-right: 0;
     }
 
@@ -102,10 +101,11 @@
   }
 
   @include vp-mobile {
-    max-width: 290px;
+    max-width: 100%;
     padding-top: 16px;
     padding-bottom: 15px;
     align-self: center;
+    margin-top: 12px;
   }
 
   &:hover {

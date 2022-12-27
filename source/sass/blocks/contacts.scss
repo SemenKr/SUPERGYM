@@ -9,17 +9,16 @@
   flex-direction: column;
 
   @include vp-tablet {
-    padding: 0 45px;
-    padding-bottom: 68px;
-    padding-top: 62px;
+    padding: 54px 128px 63px;
     max-width: 100%;
     column-gap: 60px;
+    margin-right: 0;
+    justify-self: center;
   }
 
   @include vp-mobile {
     width: 100%;
-    padding: 65px 15px;
-    padding-bottom: 70px;
+    padding: 50px 10px 59px;
   }
 
   h2 {
@@ -33,11 +32,14 @@
     max-width: fit-content;
 
     @include vp-tablet {
-      margin-bottom: 35px;
+      font-size: 42px;
+      margin-bottom: 25px;
+      margin-left: 5px;
     }
 
     @include vp-mobile {
-      margin-bottom: 34px;
+      font-size: 32px;
+      margin-bottom: 21px;
     }
   }
 }
@@ -54,7 +56,7 @@
   margin-left: 3px;
 
   @include vp-tablet {
-    column-gap: 66px;
+    column-gap: 68px;
     row-gap: 18px;
     padding-left: 0;
   }
@@ -63,7 +65,7 @@
     display: flex;
     flex-direction: column;
     width: 100%;
-    gap: 20px;
+    gap: 21px;
   }
 
   &::before {
@@ -87,6 +89,21 @@
     }
   }
 
+  li {
+    @include vp-tablet {
+      margin-left: 2px;
+    }
+  }
+
+  li:nth-child(even) {
+    @include vp-tablet {
+      margin-left: 28px;
+    }
+    @include vp-mobile {
+      margin-left: 0;
+    }
+  }
+
   h3 {
     margin: 0;
     font-weight: 700;
@@ -97,7 +114,7 @@
 
     @include vp-tablet {
       font-size: 20px;
-      margin-bottom: 4px;
+      margin-bottom: 6px;
     }
 
     @include vp-mobile {
@@ -108,6 +125,10 @@
   p {
     margin: 0;
     font-size: 14px;
+
+    @include vp-tablet {
+      font-size: 18px;
+    }
   }
   a {
     font-weight: 400;
@@ -132,5 +153,24 @@
 
   address {
     font-style: normal;
+  }
+}
+
+.contacts__item {
+  &--time {
+    @include vp-mobile {
+      order: 1;
+    }
+  }
+
+  &--tel {
+    @include vp-mobile {
+      order: 2;
+    }
+  }
+  &--mail {
+    @include vp-mobile {
+      order: 3;
+    }
   }
 }

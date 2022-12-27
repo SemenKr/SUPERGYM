@@ -9,11 +9,14 @@
   gap: 34px;
 
   @include vp-tablet {
-    gap: 30px;
+    gap: 24px;
+    margin-left: 15px;
+    margin-top: 6px;
   }
 
   @include vp-mobile {
     gap: 30px;
+    margin-left: 0;
     display: block;
   }
 
@@ -30,6 +33,13 @@
     &:focus-visible {
       outline: 1px solid $color-default-white;
       outline-offset: 3px;
+    }
+
+    @include vp-mobile {
+      display: block;
+      margin-bottom: 19px;
+      font-size: 16px;
+      padding: 3px 0;
     }
   }
 }

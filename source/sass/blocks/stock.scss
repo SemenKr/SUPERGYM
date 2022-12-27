@@ -28,6 +28,7 @@
 
     @include vp-mobile {
       font-size: 32px;
+      margin-bottom: 45px;
     }
   }
 }
@@ -66,6 +67,7 @@
     min-height: 211px;
     display: flex;
     flex-direction: column;
+    padding-right: 25px;
     padding-bottom: 30px;
     align-items: flex-start;
   }
@@ -74,7 +76,7 @@
     max-width: none;
     flex: 0 0 100%;
     align-items: center;
-    padding-top: 36px;
+    padding-top: 28px;
     padding-bottom: 40px;
   }
 
@@ -84,6 +86,10 @@
     font-size: 26px;
     line-height: 1.5;
     margin-bottom: 1px;
+
+    @include vp-tablet {
+      margin-bottom: 3px;
+    }
   }
 
   p {
@@ -99,6 +105,14 @@
 
     @include vp-mobile {
       text-align: center;
+    }
+  }
+
+  br {
+    display: none;
+
+    @include vp-tablet {
+      display: block;
     }
   }
 
@@ -183,7 +197,7 @@
     width: 100%;
     padding-left: 50px;
     padding-right: 50px;
-    padding-bottom: 44px;
+    padding-bottom: 45px;
     align-items: center;
   }
 
@@ -222,7 +236,7 @@
 
     @include vp-mobile {
       text-align: center;
-      margin-bottom: 29px;
+      margin-bottom: 32px;
     }
   }
 
