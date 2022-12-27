@@ -26,7 +26,7 @@
     }
 
     @include vp-mobile {
-      width:  100%;
+      width: 100%;
       aspect-ratio: 320 / 167;
     }
   }
@@ -103,7 +103,7 @@
 
 .video._active {
   iframe {
-    height: 100%;
+    object-fit: cover;
     z-index: 3;
   }
 }
@@ -116,6 +116,19 @@
 
 .video--enabled {
   cursor: pointer;
+
+  iframe {
+    object-fit: cover;
+    @include vp-tablet {
+      max-width: 266px;
+      height: 100%;
+    }
+
+    @include vp-mobile {
+      max-width: 100%;
+      height: auto;
+    }
+  }
 }
 
 .video--enabled .video__button {
