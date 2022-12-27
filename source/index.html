@@ -21,18 +21,16 @@
 </head>
 
 <body>
-  <div class="wrapper">
-    <header class="header">
-      <div class="container">
-        <div class="header__container">
-          <div class="header__logo logo">
-            <svg class="logo__img" width="119" height="23" viewBox="0 0 119 23">
-              <use xlink:href="./img/sprite.svg#logo"></use>
-            </svg>
-          </div>
-          <div class="header__phone phone">
-            <a class="phone__link" href="tel:+88005555555">8-800-555-55-55</a>
-          </div>
+  <div class="page wrapper">
+    <header class="page__header header">
+      <div class="header__container container">
+        <div class="header__logo logo">
+          <svg class="logo__img" width="119" height="23" viewBox="0 0 119 23">
+            <use xlink:href="./img/sprite.svg#logo"></use>
+          </svg>
+        </div>
+        <div class="header__phone phone">
+          <a class="phone__link" href="tel:+88005555555">8-800-555-55-55</a>
         </div>
       </div>
     </header>
@@ -41,7 +39,7 @@
         <div class="container about__container">
           <div class="about__content">
             <h1>Фитнес центр</h1>
-            <p>омск</p>
+            <p>Омск</p>
             <ul class="about__list">
               <li class="about__item">Тренажёрный зал</li>
               <li class="about__item">Групповые занятия</li>
@@ -55,7 +53,6 @@
               <img width="500" height="556" src="img/about-photo@1x.jpg" srcset="img/about-photo@2x.jpg 2x" alt="Мужчина в футболке с логотипом Супермен">
             </picture>
           </div>
-          <div class="about__image"></div>
         </div>
       </section>
       <section class="review">
@@ -80,8 +77,8 @@
             <div class="video">
               <a class="video__link" href="https://www.youtube.com/watch?v=9TZXsZItgdw">
                 <picture>
-                  <source type="image/webp" srcset="img/background@1x.webp   1x, img/background@2x.webp 2x">
-                  <img class="video__media" id="9TZXsZItgdw" src="img/background@1x.jpg" srcset="img/background@2x.jpg 2x" alt="Тренажерный зал">
+                  <source type="image/webp" srcset="img/background-tablet@1x.webp   1x, img/background-tablet@2x.webp 2x">
+                  <img class="video__media" id="9TZXsZItgdw" src="img/background-tablet@1x.jpg" srcset="img/background-tablet@2x.jpg 2x" alt="Тренажерный зал">
                 </picture>
               </a>
               <button class="video__button" aria-label="Запустить видео"></button>
@@ -99,8 +96,7 @@
               <button class="tabs__nav-btn" type="button" data-tab="#tab_3">12 месяцев</button>
             </div>
             <div class="tabs__content">
-              <div class="tabs__item active" id="tab_1">
-                <ul class="subscriptions__list">
+                <ul class="subscriptions__list tabs__item active" id="tab_1">
                   <li class="subscriptions__item card" tabindex="0">
                     <h3>С тренером</h3>
                     <span>12 занятий</span>
@@ -132,9 +128,7 @@
                     <a class="card__button" href="#">купить абонемент</a>
                   </li>
                 </ul>
-              </div>
-              <div class="tabs__item" tabindex="0" id="tab_2">
-                <ul class="subscriptions__list">
+                <ul class="subscriptions__list tabs__item" tabindex="0" id="tab_2">
                   <li class="subscriptions__item card" tabindex="0">
                     <h3>С тренером</h3>
                     <span>12 занятий</span>
@@ -166,9 +160,7 @@
                     <a class="card__button" href="#">купить абонемент</a>
                   </li>
                 </ul>
-              </div>
-              <div class="tabs__item" tabindex="0" id="tab_3">
-                <ul class="subscriptions__list">
+                <ul class="subscriptions__list tabs__item" tabindex="0" id="tab_3">
                   <li class="subscriptions__item card" tabindex="0">
                     <h3>С тренером</h3>
                     <span>12 занятий</span>
@@ -200,7 +192,6 @@
                     <a class="card__button" href="#">купить абонемент</a>
                   </li>
                 </ul>
-              </div>
             </div>
           </div>
           <div class="subscriptions__bg">
@@ -383,14 +374,14 @@
           <h2>Наши преимущества</h2>
           <ul class="features__list">
             <li class="features__item features__item--line">
-                <p class="features__numbers">900<span>кв/м</span></p>
+              <p class="features__numbers">900<span>кв/м</span></p>
               <div class="features__text">
                 <h3>Площадь</h3>
                 <p>Занимайтесь без очередей и&nbsp;толпучки</p>
               </div>
             </li>
             <li class="features__item features__item--line">
-                <p  class="features__numbers features__numbers--right-column">70<span>машин</span></p>
+              <p class="features__numbers features__numbers--right-column">70<span>машин</span></p>
               <div class="features__text">
                 <h3>Собственная парковка</h3>
                 <p>Вы&nbsp;всегда найдете место для своей машины на&nbsp;нашей парковке</p>
@@ -404,14 +395,14 @@
               <p>Современные тренажеры на все группы мышц</p>
             </li>
             <li class="features__item features__item--bottom ">
-                <p class="features__numbers">350<span>мест</span></p>
+              <p class="features__numbers">350<span>мест</span></p>
               <div class="features__text">
                 <h3>Комфорт</h3>
                 <p>Просторные раздевалки, душевые,фен,Wi-Fi,кулеры</p>
               </div>
             </li>
             <li class="features__item features__item--bottom">
-                <p class="features__numbers features__numbers--right-column">5+<span>лет</span></p>
+              <p class="features__numbers features__numbers--right-column">5+<span>лет</span></p>
               <div class="features__text">
                 <h3>Тренерский опыт</h3>
                 <p>Добивайтесь своих целей быстрее с&nbsp;профессиональным тренером</p>
@@ -432,8 +423,8 @@
               </div>
               <div class="stock__item-image">
                 <picture>
-                  <source type="image/webp" srcset="img/stock-photo-desktop@1x.webp   1x, img/stock-photo-desktop@2x.webp 2x">
-                  <img width="280" height="462" alt="Девушка в спортивном костюме" src="img/stock-photo-desktop@1x.jpg" srcset="img/stock-photo-desktop@2x.jpg 2x">
+                  <source type="image/webp" srcset="img/stock-photo-tablet@1x.webp   1x, img/stock-photo-tablet@2x.webp 2x">
+                  <img width="280" height="462" alt="Девушка в спортивном костюме" src="img/stock-photo-tablet@1x.jpg" srcset="img/stock-photo-tablet@2x.jpg 2x">
                 </picture>
               </div>
             </li>
