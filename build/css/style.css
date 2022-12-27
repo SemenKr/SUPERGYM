@@ -1722,7 +1722,6 @@ button,
 
 .card__button {
   width: 64%;
-  margin-left: 1px;
   padding: 26px 10px;
   padding-bottom: 23px;
   font-weight: 700;
@@ -2360,6 +2359,7 @@ button,
   font-size: 54px;
   line-height: 1;
   letter-spacing: 0.03em;
+  margin: 0;
   margin-bottom: 39px;
 }
 
@@ -3053,6 +3053,7 @@ button,
     padding-top: 79px;
     width: auto;
     margin-right: 28px;
+    padding-left: 100px;
   }
 
   .about__button {
@@ -3085,9 +3086,7 @@ button,
   }
 
   .review {
-    padding: 100px 45px;
-    padding-top: 101px;
-    padding-bottom: 95px;
+    padding: 105px 45px 95px;
   }
 
   .review__container {
@@ -3116,7 +3115,7 @@ button,
   }
 
   .review__subtitle {
-    margin-bottom: 33px;
+    margin-bottom: 36px;
   }
 
   .review__description {
@@ -3145,12 +3144,22 @@ button,
     bottom: 5px;
     left: 50%;
     margin-top: 0;
-    width: 266px;
+    max-width: 266px;
+    height: 167px;
+  }
+
+  .review__video img {
+    max-width: 266px;
     height: 167px;
   }
 
   .video {
     width: 266px;
+  }
+
+  .video--enabled {
+    width: 266px;
+    height: 167px;
   }
 
   .video__button {
@@ -3159,18 +3168,19 @@ button,
   }
 
   .subscriptions {
-    padding: 100px 163px;
+    padding: 106px 163px 100px;
   }
 
   .subscriptions h2 {
     font-size: 42px;
     margin-right: 9px;
-    margin-bottom: 20px;
+    margin-bottom: 22px;
   }
 
   .subscriptions__list {
     -ms-grid-columns: (1fr)[1];
     grid-template-columns: repeat(1, 1fr);
+    gap: 37px;
   }
 
   .subscriptions__bg {
@@ -3178,7 +3188,7 @@ button,
   }
 
   .tabs__nav {
-    gap: 54px;
+    gap: 42px;
     margin-bottom: 44px;
   }
 
@@ -3191,7 +3201,7 @@ button,
   }
 
   .card {
-    padding-top: 57px;
+    padding-top: 30px;
     padding-bottom: 63px;
   }
 
@@ -3201,11 +3211,11 @@ button,
   }
 
   .card span {
-    margin-bottom: 76px;
+    margin-bottom: 66px;
   }
 
   .card__price {
-    margin: -35px 0 0 4px;
+    margin: 0 0 36px 0;
   }
 
   .card__button {
@@ -3222,7 +3232,7 @@ button,
   .competition__content {
     -ms-grid-rows: auto auto auto;
     grid-template-rows: auto auto auto;
-    padding: 50px 45px;
+    padding: 47px 45px;
     width: 50%;
     padding-top: 47px;
     padding-bottom: 30px;
@@ -3231,8 +3241,9 @@ button,
   .competition__content h2 {
     font-size: 48px;
     line-height: 96%;
-    margin-top: 10px;
+    margin-top: 4px;
     margin-left: 7px;
+    margin-bottom: 12px;
   }
 
   .competition__button {
@@ -3261,7 +3272,7 @@ button,
   }
 
   .competition__date p {
-    padding-bottom: 3px;
+    padding-bottom: 5px;
     padding-top: 2px;
   }
 
@@ -3313,6 +3324,8 @@ button,
     -ms-grid-row-align: center;
     align-self: center;
     font-size: 42px;
+    margin-bottom: 36px;
+    margin-right: 5px;
   }
 
   .coaches__container {
@@ -3337,18 +3350,38 @@ button,
     margin-bottom: 14%;
   }
 
+  .swiper-button-prev {
+    left: -11%;
+    margin-top: 20px;
+  }
+
+  .swiper-button-prev--feedback {
+    left: 25%;
+    margin-top: 5px;
+  }
+
+  .swiper-button-next {
+    right: -11%;
+    margin-top: 20px;
+  }
+
+  .swiper-button-next--feedback {
+    right: 25%;
+    margin-top: 5px;
+  }
+
   .features {
-    padding-top: 90px;
+    padding-top: 92px;
     padding-bottom: 95px;
-    padding-left: 15px;
-    padding-right: 15px;
+    padding-left: 25px;
+    padding-right: 25px;
   }
 
   .features h2 {
     margin-left: 0;
     margin-right: 22px;
-    font-size: 50.4px;
-    margin-bottom: 60px;
+    font-size: 42px;
+    margin-bottom: 47px;
   }
 
   .features__item--accent {
@@ -3367,6 +3400,11 @@ button,
 
   .features__item--line {
     border: none;
+    padding-bottom: 0;
+  }
+
+  .features__item--bottom {
+    padding-top: 11px;
   }
 
   .features__item h3 {
@@ -3411,22 +3449,22 @@ button,
   }
 
   .features__text p {
-    width: 94%;
+    width: 90%;
   }
 
   .features__list {
     -ms-grid-columns: 1fr 1fr;
     grid-template-columns: 1fr 1fr;
-    gap: 50px;
+    gap: 32px;
   }
 
   .stock {
-    padding-top: 93px;
+    padding-top: 96px;
   }
 
   .stock h2 {
     font-size: 42px;
-    margin-bottom: 50px;
+    margin-bottom: 43px;
   }
 
   .stock__list {
@@ -3482,8 +3520,17 @@ button,
   }
 
   .feedback {
-    padding-top: 43px;
+    padding-top: 47px;
     padding-bottom: 100px;
+  }
+
+  .feedback h2 {
+    font-size: 42px;
+    margin-right: 13px;
+  }
+
+  .feedback__swiper {
+    max-width: 86%;
   }
 
   .feedback__item {

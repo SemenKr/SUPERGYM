@@ -29,6 +29,8 @@
     @include vp-tablet {
       align-self: center;
       font-size: 42px;
+      margin-bottom: 36px;
+      margin-right: 5px;
     }
 
     @include vp-mobile {

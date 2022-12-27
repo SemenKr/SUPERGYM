@@ -19,6 +19,11 @@
     object-fit: cover;
     width: 364px;
     height: 228px;
+
+    @include vp-tablet {
+      width: 266px;
+      height: 167px;
+    }
   }
 }
 

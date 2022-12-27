@@ -6,7 +6,7 @@
   color: $color-text-dark;
 
   @include vp-tablet {
-    padding: 100px 163px;
+    padding: 106px 163px 100px;
   }
 
   @include vp-mobile {
@@ -30,7 +30,7 @@
     @include vp-tablet {
       font-size: 42px;
       margin-right: 9px;
-      margin-bottom: 20px;
+      margin-bottom: 22px;
     }
 
     @include vp-mobile {
@@ -60,6 +60,7 @@
 
   @include vp-tablet {
     grid-template-columns: repeat(1, 1fr);
+    gap: 37px;
   }
 
   @include vp-mobile {

@@ -5,9 +5,7 @@
   color: $color-text-dark;
 
   @include vp-tablet {
-    padding: 100px 45px;
-    padding-top: 101px;
-    padding-bottom: 95px;
+    padding: 105px 45px 95px;
   }
 
   @include vp-mobile {
@@ -90,7 +88,7 @@
   margin-bottom: 39px;
 
   @include vp-tablet {
-    margin-bottom: 33px;
+    margin-bottom: 36px;
   }
 
   @include vp-mobile {
@@ -168,7 +166,7 @@
     bottom: 5px;
     left: 50%;
     margin-top: 0;
-    width: 266px;
+    max-width: 266px;
     height: 167px;
   }
 
@@ -195,5 +193,10 @@
     object-fit: cover;
     width: 364px;
     height: 228px;
+
+    @include vp-tablet {
+      max-width: 266px;
+      height: 167px;
+    }
   }
 }

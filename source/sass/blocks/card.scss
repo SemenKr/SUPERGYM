@@ -10,7 +10,7 @@
   border-image-source: transparent;
 
   @include vp-tablet {
-    padding-top: 57px;
+    padding-top: 30px;
     padding-bottom: 63px;
   }
 
@@ -50,7 +50,7 @@
     margin-bottom: 64px;
 
     @include vp-tablet {
-      margin-bottom: 76px;
+      margin-bottom: 66px;
     }
 
     @include vp-mobile {
@@ -78,7 +78,7 @@
   display: block;
 
   @include vp-tablet {
-    margin: -35px 0 0 4px;
+    margin: 0 0 36px 0;
   }
 
   @include vp-mobile {
@@ -114,7 +114,6 @@
 
 .card__button {
   width: 64%;
-  margin-left: 1px;
   padding: 26px 10px;
   padding-bottom: 23px;
   font-weight: 700;
