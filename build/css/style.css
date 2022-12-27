@@ -2623,6 +2623,7 @@ button,
   display: grid;
   -ms-grid-columns: 1fr 1fr;
   grid-template-columns: 1fr 1fr;
+  border-top: 1px solid #74819C;
 }
 
 .order__form {
@@ -3585,6 +3586,7 @@ button,
   .order {
     -ms-grid-columns: 1fr;
     grid-template-columns: 1fr;
+    border: none;
   }
 
   .form {

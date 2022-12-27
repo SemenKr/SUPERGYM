@@ -1,9 +1,11 @@
 .order {
   display: grid;
   grid-template-columns: 1fr 1fr;
+  border-top: 1px solid #74819C;
 
   @include vp-tablet {
     grid-template-columns: 1fr;
+    border:none;
   }
 }
 
