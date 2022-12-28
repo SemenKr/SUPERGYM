@@ -90,10 +90,7 @@
   text-transform: uppercase;
   color: $color-text-light;
   cursor: pointer;
-  transition: color 0.3s ease,
-  border 0.3s ease,
-  background 0.3s ease,
-  transform 0.3s ease;
+  transition: color 0.3s ease, border 0.3s ease, background 0.3s ease, transform 0.3s ease;
 
   @include vp-tablet {
     padding-top: 17px;

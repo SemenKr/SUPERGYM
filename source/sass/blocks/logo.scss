@@ -1,21 +1,18 @@
 .logo {
-
   svg {
+    @include vp-tablet {
+      width: 82px;
+      height: 17px;
+    }
 
-      @include vp-tablet {
-        width: 82px;
-        height: 17px;
-      }
-
-      @include vp-mobile {
-        width: 69px;
-        height: 24px;
-      }
+    @include vp-mobile {
+      width: 69px;
+      height: 24px;
+    }
   }
 }
 
 .logo--footer {
-
   svg {
     width: 88px;
 
@@ -27,6 +24,5 @@
       width: 68px;
       margin-bottom: 5px;
     }
-
   }
 }

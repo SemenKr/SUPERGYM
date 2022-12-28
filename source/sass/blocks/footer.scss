@@ -31,6 +31,7 @@
 
 .footer__wrapper-logo-nav {
   display: contents;
+
   @include vp-mobile {
     display: block;
     column-count: 2;

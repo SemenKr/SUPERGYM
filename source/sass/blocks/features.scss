@@ -23,7 +23,6 @@
   h2 {
     font-family: $ff-alumni;
     margin: 0;
-    margin-bottom: 12px;
     margin-left: 10px;
     font-weight: 600;
     font-size: 54px;
@@ -202,34 +201,22 @@
 }
 
 .features__number-accent {
-  text-align: center;
   margin-bottom: 31px;
+  font-weight: 700;
+  font-size: 74px;
+  line-height: 1;
+  text-align: center;
+  width: auto;
 
   @include vp-tablet {
     display: flex;
     flex-direction: column;
-    margin-bottom: 14px;
+    margin-bottom: 0;
+    margin-right: 4px;
   }
 
   @include vp-mobile {
     margin-bottom: 0;
-  }
-
-  p {
-    font-weight: 700;
-    font-size: 74px;
-    line-height: 1;
-    text-align: center;
-    width: auto;
-
-    @include vp-tablet {
-      margin-bottom: 0;
-      margin-right: 4px;
-    }
-
-    @include vp-mobile {
-      margin-bottom: 0;
-    }
   }
 
   span {
@@ -280,8 +267,7 @@
     }
 
     @include vp-mobile {
-      width: 90%;
-      text-align:center;
+      text-align: center;
     }
   }
 }

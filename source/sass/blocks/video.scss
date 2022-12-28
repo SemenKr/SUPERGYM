@@ -1,8 +1,6 @@
 .video {
   position: relative;
-  width: 100%;
-  height: 0;
-  padding-bottom: 52.25%;
+  object-fit: cover;
   background-color: #000000;
 
   @include vp-tablet {
@@ -12,23 +10,6 @@
   @include vp-mobile {
     width: 100%;
     background-size: cover;
-    aspect-ratio: 320 / 167;
-  }
-
-  &--enabled {
-    object-fit: cover;
-    width: 364px;
-    height: 228px;
-
-    @include vp-tablet {
-      width: 266px;
-      height: 167px;
-    }
-
-    @include vp-mobile {
-      width: 100%;
-      aspect-ratio: 320 / 167;
-    }
   }
 }
 
@@ -38,6 +19,12 @@
   left: 0;
   width: 100%;
   height: 100%;
+
+  @include vp-mobile {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 320 / 167;
+  }
 
   &::before {
     content: "";
@@ -59,10 +46,6 @@
   width: 100%;
   height: 100%;
   border: none;
-
-  @include vp-mobile {
-    aspect-ratio: 320 / 167;
-  }
 }
 
 .video__button {
@@ -106,6 +89,8 @@
   iframe {
     object-fit: cover;
     z-index: 3;
+    width: 100%;
+    height: 100%;
   }
 }
 
@@ -115,11 +100,27 @@
 
 .video--enabled {
   cursor: pointer;
+  object-fit: cover;
+  width: 364px;
+  height: 228px;
+
+  @include vp-tablet {
+    width: 266px;
+    height: 167px;
+  }
+
+  @include vp-mobile {
+    max-width: 320px;
+    height: auto;
+    margin: 0 auto;
+    aspect-ratio: 320 / 167;
+  }
 
   iframe {
     object-fit: cover;
     height: 100%;
-    
+    width: 100%;
+
     @include vp-tablet {
       max-width: 266px;
       height: 100%;

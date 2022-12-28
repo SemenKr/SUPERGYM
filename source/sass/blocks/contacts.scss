@@ -99,6 +99,7 @@
     @include vp-tablet {
       margin-left: 28px;
     }
+
     @include vp-mobile {
       margin-left: 0;
     }
@@ -130,6 +131,7 @@
       font-size: 18px;
     }
   }
+
   a {
     font-weight: 400;
     font-size: 14px;
@@ -168,6 +170,7 @@
       order: 2;
     }
   }
+
   &--mail {
     @include vp-mobile {
       order: 3;

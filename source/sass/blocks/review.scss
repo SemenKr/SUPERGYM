@@ -77,49 +77,53 @@
       margin-bottom: 8px;
     }
   }
-}
 
-.review__subtitle {
-  font-family: $ff-roboto;
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 1.5;
-  margin: 0;
-  margin-bottom: 39px;
-
-  @include vp-tablet {
-    margin-bottom: 36px;
-  }
-
-  @include vp-mobile {
-    text-align-last: left;
-    margin-bottom: 24px;
-  }
-}
-
-.review__description {
-  font-family: $ff-roboto;
-  font-weight: 300;
-  font-size: 16px;
-  line-height: 1.5;
-  margin: 0;
-  margin-bottom: 8px;
-
-  @include vp-tablet {
-    width: 80%;
-    margin: 0 auto;
-    margin-bottom: 41px;
-    padding-right: 0;
-  }
-
-  @include vp-mobile {
+  h3 {
+    font-family: $ff-roboto;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.5;
     margin: 0;
-    text-align: left;
-    width: 100%;
-    padding-right: 20px;
+    margin-bottom: 39px;
+
+    @include vp-tablet {
+      margin-bottom: 36px;
+    }
+
+    @include vp-mobile {
+      text-align-last: left;
+      margin-bottom: 24px;
+    }
   }
 
-  &--more {
+  p {
+    font-family: $ff-roboto;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 1.5;
+    margin: 0;
+    margin-bottom: 8px;
+
+    @include vp-tablet {
+      width: 80%;
+      margin: 0 auto;
+      margin-bottom: 41px;
+      padding-right: 0;
+    }
+
+    @include vp-mobile {
+      margin: 0;
+      text-align: left;
+      width: 100%;
+      padding-right: 20px;
+    }
+  }
+
+  span {
+    font-family: $ff-roboto;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 1.5;
     margin-top: 8px;
     margin-right: 15px;
 
@@ -142,14 +146,6 @@
   img {
     width: 100%;
     object-fit: cover;
-
-    @include vp-tablet {
-      aspect-ratio: 678/345;
-    }
-
-    @include vp-mobile {
-      aspect-ratio: 320/313;
-    }
   }
 }
 
@@ -179,18 +175,6 @@
     top: 0;
     margin-top: 12px;
     width: 100%;
-    aspect-ratio: 320 / 167;
-  }
-
-  iframe {
-    object-fit: cover;
-    width: 364px;
-    height: 228px;
-
-    @include vp-mobile {
-      height: 100%;
-width: 100%;
-    }
   }
 
   img {
@@ -205,7 +189,7 @@ width: 100%;
 
     @include vp-mobile {
       height: 100%;
-width: 100%;
+      width: 100%;
     }
   }
 }
