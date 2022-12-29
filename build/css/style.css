@@ -1473,7 +1473,6 @@ button,
   cursor: pointer;
   width: 100px;
   height: 100px;
-  background-color: #838080;
   background-image: url("../img/svg/video-play.svg");
   z-index: 2;
   -webkit-transition: opacity 0.3s ease, -webkit-transform 0.3s ease;
@@ -2288,7 +2287,7 @@ button,
   line-height: 1;
 }
 
-.features__item--accent p {
+.features__item--accent span {
   font-weight: 400;
   font-size: 16px;
   line-height: 1.5;
@@ -2303,7 +2302,15 @@ button,
   font-size: 74px;
   line-height: 1;
   text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
   width: auto;
+  margin-top: 0;
 }
 
 .features__number-accent span {
@@ -2883,6 +2890,7 @@ button,
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
   gap: 34px;
+  max-width: 400px;
 }
 
 .navigation__list a {
@@ -2915,6 +2923,7 @@ button,
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
   gap: 11px;
+  max-width: 120px;
 }
 
 .social__link {
@@ -3151,6 +3160,12 @@ button,
     margin: 0;
   }
 
+  .review__image img {
+    aspect-ratio: 678/345;
+    -o-object-position: top;
+    object-position: top;
+  }
+
   .review__video {
     top: auto;
     bottom: 5px;
@@ -3278,9 +3293,8 @@ button,
 
   .competition__description {
     font-size: 12px;
-    padding-top: 0;
-    padding-bottom: 0;
-    margin-top: -28px;
+    padding: 4px 0;
+    margin-top: -31px;
   }
 
   .competition__date {
@@ -3436,7 +3450,7 @@ button,
     font-size: 58px;
   }
 
-  .features__item--accent p {
+  .features__item--accent span {
     width: 50%;
     -ms-flex-item-align: center;
     -ms-grid-row-align: center;
@@ -3444,19 +3458,13 @@ button,
   }
 
   .features__number-accent {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: column;
-    flex-direction: column;
     margin-bottom: 0;
     margin-right: 4px;
   }
 
   .features__number-accent span {
     font-size: 22px;
+    margin-bottom: 15px;
   }
 
   .features__text {
@@ -3787,6 +3795,10 @@ button,
     padding-right: 20px;
   }
 
+  .review__image img {
+    aspect-ratio: 320/313;
+  }
+
   .review__video {
     position: relative;
     -webkit-transform: none;
@@ -4059,7 +4071,7 @@ button,
     align-items: center;
   }
 
-  .features__item--accent p {
+  .features__item--accent span {
     width: 80%;
     margin-bottom: 0;
   }
@@ -4215,7 +4227,7 @@ button,
   .feedback__item h3 {
     line-height: 1.3;
     width: 50%;
-    margin-top: 0;
+    margin-top: 7px;
     margin-left: 3px;
   }
 

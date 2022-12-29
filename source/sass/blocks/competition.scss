@@ -131,9 +131,8 @@
 
   @include vp-tablet {
     font-size: 12px;
-    padding-top: 0;
-    padding-bottom: 0;
-    margin-top: -28px;
+    padding: 4px 0;
+    margin-top: -31px;
   }
 
   @include vp-mobile {

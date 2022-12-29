@@ -175,7 +175,7 @@
   }
 }
 
-.features__item--accent p {
+.features__item--accent span {
   font-weight: 400;
   font-size: 16px;
   line-height: 1.5;
@@ -206,13 +206,15 @@
   font-size: 74px;
   line-height: 1;
   text-align: center;
+  display: flex;
+  flex-direction: column;
   width: auto;
+  margin-top: 0;
 
   @include vp-tablet {
-    display: flex;
-    flex-direction: column;
     margin-bottom: 0;
     margin-right: 4px;
+
   }
 
   @include vp-mobile {
@@ -226,6 +228,7 @@
 
     @include vp-tablet {
       font-size: 22px;
+      margin-bottom: 15px;
     }
 
     @include vp-mobile {
