@@ -1,3 +1,15 @@
+.phone {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  gap: 20px;
+
+
+  @include vp-tablet {
+    flex-direction: row;
+  }
+}
+
 .phone__link {
   font-family: $ff-alumni;
   font-style: normal;

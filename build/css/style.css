@@ -1170,6 +1170,19 @@ button,
   width: 88px;
 }
 
+.phone {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
 .phone__link {
   font-family: "Alumni Sans", "Arial", sans-serif;
   font-style: normal;
@@ -1460,6 +1473,7 @@ button,
   cursor: pointer;
   width: 100px;
   height: 100px;
+  background-color: #838080;
   background-image: url("../img/svg/video-play.svg");
   z-index: 2;
   -webkit-transition: opacity 0.3s ease, -webkit-transform 0.3s ease;
@@ -3018,6 +3032,13 @@ button,
 
   .logo--footer svg {
     width: 82px;
+  }
+
+  .phone {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
   }
 
   .phone__link {
