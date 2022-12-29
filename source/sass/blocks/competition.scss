@@ -30,6 +30,7 @@
   display: grid;
   grid-template-columns: 2fr 1fr;
   grid-template-rows: repeat(3, auto);
+  row-gap: 10px;
   max-width: 43%;
   align-items: flex-start;
 
@@ -87,7 +88,7 @@
   grid-column: 1/-1;
   padding-top: 24px;
   padding-bottom: 23px;
-  margin-top: 26px;
+  margin-top: 14px;
   text-align: center;
   transition: background-color 0.3s ease, color 0.3s ease, border 0.3s ease, transform 0.3s ease;
 
@@ -102,7 +103,7 @@
   }
 
   @include vp-mobile {
-    margin-top: 27px;
+    margin-top: 17px;
     padding-top: 13px;
     padding-bottom: 13px;
   }
@@ -126,7 +127,7 @@
   margin: 0;
   grid-column: 1/-1;
   grid-row: 3/4;
-  padding-top: 23px;
+  padding-top: 11px;
   padding-bottom: 21px;
 
   @include vp-tablet {
@@ -136,7 +137,7 @@
   }
 
   @include vp-mobile {
-    margin-top: 5px;
+    margin-top: -5px;
     padding-top: 0;
     padding-bottom: 0;
   }
@@ -155,14 +156,14 @@
   }
 
   &--time {
-    margin-top: 19px;
+    margin-top: 10px;
 
     @include vp-tablet {
       margin-top: -28px;
     }
 
     @include vp-mobile {
-      margin-top: 0;
+      margin-top: -7px;
     }
   }
 

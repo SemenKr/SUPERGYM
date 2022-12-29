@@ -7,7 +7,7 @@
   display: flex;
   flex-wrap: wrap;
   gap: 34px;
-  max-width: 400px;
+  max-width: 500px;
 
   @include vp-tablet {
     gap: 24px;
@@ -40,7 +40,7 @@
 
     @include vp-mobile {
       display: block;
-      margin-bottom: 19px;
+      margin-bottom: 18px;
       font-size: 16px;
       padding: 3px 0;
     }

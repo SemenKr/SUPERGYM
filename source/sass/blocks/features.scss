@@ -213,12 +213,13 @@
 
   @include vp-tablet {
     margin-bottom: 0;
-    margin-right: 4px;
+    margin-right: 8px;
 
   }
 
   @include vp-mobile {
     margin-bottom: 0;
+    margin-right: 8px;
   }
 
   span {
@@ -234,6 +235,7 @@
     @include vp-mobile {
       line-height: 1;
       margin-bottom: 14px;
+      margin-right: 5px;
     }
   }
 }
