@@ -6,6 +6,7 @@
   right: 0;
   width: 100%;
   object-fit: contain;
+  display: block;
 
   @include vp-mobile {
     width: 100%;
@@ -28,6 +29,7 @@
 .video__media {
   height: 100%;
   width: 100%;
+  display: block;
 }
 
 .video__button {
@@ -73,6 +75,7 @@
     z-index: 3;
     width: 100%;
     height: 100%;
+    display: block;
   }
 }
 
@@ -103,6 +106,7 @@
     object-fit: cover;
     border: none;
     width: 100%;
+    display: block;
 
     @include vp-tablet {
       max-width: 266px;
