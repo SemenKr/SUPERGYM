@@ -43,7 +43,7 @@
 }
 
 .feedback__swiper {
-  max-width: 48%;
+  max-width: 44%;
 
   @include vp-tablet {
     max-width: 84%;
@@ -52,6 +52,10 @@
   @include vp-mobile {
     max-width: 78%;
   }
+}
+
+.feedback__swiper-wrapper {
+  align-items: center;
 }
 
 .feedback__item {
@@ -65,6 +69,9 @@
   grid-template-rows: repeat(2, auto);
   gap: 26px;
   row-gap: 10px;
+  overflow: auto;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
 
   @include vp-tablet {
     gap: 29px;
@@ -131,6 +138,9 @@
     margin: 0;
     text-align: left;
     width: 90%;
+    overflow: auto;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
 
     @include vp-mobile {
       grid-column: 1/-1;

@@ -150,6 +150,7 @@
   ul {
     margin: 0;
     padding: 0;
+    padding-top: 7%;
     display: flex;
     flex-direction: column;
     gap: 13px;
@@ -175,7 +176,6 @@
     line-height: 1.5;
     color: #b6bdcc;
     margin-top: 0;
-    margin-bottom: 15%;
 
     @include vp-tablet {
       line-height: 1;
@@ -199,11 +199,6 @@
   }
 }
 
-.coaches__content ul::-webkit-scrollbar {
-  width: 0;
-  height: 0;
-}
-
 .coaches__content li::marker {
   color: $color-default-white;
   list-style-type: disc;
@@ -212,7 +207,14 @@
 .coaches__item:hover .coaches__content {
   transform: scale(1);
 }
+.coaches__item:focus .coaches__content {
+  transform: scale(1);
+}
 
 .coaches__item:hover .coaches__image::before {
+  opacity: 0;
+}
+
+.coaches__item:focus .coaches__image::before {
   opacity: 0;
 }

@@ -154,6 +154,7 @@
 
     @include vp-mobile {
       aspect-ratio: 320/313;
+      object-position: 88% 37%;
     }
   }
 }
@@ -163,42 +164,19 @@
   left: 53.5%;
   transform: translateX(-50%);
   top: 287px;
-  width: 364px;
-  height: 228px;
 
   @include vp-tablet {
     top: auto;
     bottom: 5px;
     left: 50%;
     margin-top: 0;
-    width: 266px;
-    height: 167px;
   }
 
   @include vp-mobile {
-    position: relative;
+    position: static;
     transform: none;
-    left: 0;
-    bottom: 0;
-    right: 0;
-    top: 0;
+
     margin-top: 12px;
     width: 100%;
-  }
-
-  img {
-    object-fit: cover;
-    width: 364px;
-    height: 228px;
-
-    @include vp-tablet {
-      width: 266px;
-      height: 167px;
-    }
-
-    @include vp-mobile {
-      height: 100%;
-      width: 100%;
-    }
   }
 }

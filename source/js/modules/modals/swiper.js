@@ -1,5 +1,5 @@
 /* eslint-disable no-unused-vars */
-import Swiper, {Navigation} from 'swiper';
+import Swiper, { Navigation } from 'swiper';
 
 // init Swiper:
 const coachesSwiper = new Swiper('.coaches__slider', {
@@ -8,6 +8,7 @@ const coachesSwiper = new Swiper('.coaches__slider', {
   slidesPerView: 4,
   slidesPerGroup: 1,
   observer: true,
+  loop: true,
   keyboard: {
     enabled: true,
     onlyInViewport: true,
