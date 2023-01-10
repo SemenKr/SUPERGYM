@@ -1935,7 +1935,7 @@ button,
 }
 
 .competition__image {
-  background-color: #030a1a;
+  background-color: #000145;
 }
 
 .competition__image img {
@@ -3812,8 +3812,8 @@ button,
 
   .review__image img {
     aspect-ratio: 320/313;
-    -o-object-position: 88% 37%;
-    object-position: 88% 37%;
+    -o-object-position: -173px 2px;
+    object-position: -173px 2px;
   }
 
   .review__video {
@@ -3962,6 +3962,8 @@ button,
 
   .competition__image img {
     aspect-ratio: 290/292;
+    -o-object-position: -39px 11px;
+    object-position: -39px 11px;
   }
 
   .coaches {
